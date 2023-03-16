@@ -1,0 +1,11 @@
+plot(data) -çizdir
+sound(data,fs) -ses çal
+clean sound; -ses kapa
+flipud(data) -ters çevir
+audiowrite(dosya_ismi,data,fs) -sesi kaydet
+size(data) -veri boyutu
+downsample(data,örneklem düşürme oranı) -örneklemi düşür
+linspace(altsıınır,üstsınır,örnek sayısı) -sin dalgası oluştur
+fft() -fast fourier transform
+ %% frekaslardan biri 0.2*10^6 diğeri 2.2*10^6 Hz değerinde
+
